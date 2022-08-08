@@ -1,13 +1,14 @@
-*{
+* {
     font-family: 'Fraunces', serif;
     color: #fff;
-
 }
+
 body {
     margin: 0;
-    background-color: blanchedalmond;
+    background-color: #224870;
 }
-.contenedor {
+
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,12 +19,13 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 75px);
     grid-template-rows: 160px repeat(5, 75px);
-    background-color: grey;
+    background-color: gray;
     padding: 15px;
     border-radius: 32px;
     box-shadow: 15px 10px 0px 5px #00000033;
 }
-button{
+
+button {
     cursor: pointer;
     margin: 5px;
     padding: 0;
@@ -31,17 +33,21 @@ button{
     font-size: 1.5em;
     border: none;
     background-color: grey;
-    box-shadow: 5px 5px 10px -3px #00000040, -5px -5px 15px 3px #1415151f;
+    box-shadow: 5px 5px 10px -3px #00000040, -5px -5px 15px 3px #4545451f;
 }
+
 button:active {
     background-color: gray;
 }
+
 button:focus {
     outline: none;
 }
-.esp {
+
+.col-2 {
     grid-column: span 2;
 }
+
 .display {
     grid-column: 1 / -1;
     padding: 16px;
@@ -56,9 +62,11 @@ button:focus {
     word-break: break-all;
     box-shadow: 0px 0px 0px 10px #00000033;
 }
-#v_actual {
+
+#valor-actual {
     font-size: 1.5em;
 }
-#v_anterior {
+
+#valor-anterior {
     font-size: 2em;
 }
